@@ -1,6 +1,9 @@
 name: CI
+
 on:
   push:
+
 jobs:
   pipeline:
     uses: demo-hell/pipelines-pointer/.github/workflows/docker-image.yml@main
+    secrets: inherit
